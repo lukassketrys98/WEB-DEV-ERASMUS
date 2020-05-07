@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type = "text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/suitcase.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Notes app</title>
+</head>
+<body>
+    
+    <div class="app">
+        <h1 class = "notes-header">My notes<a href="#" class="btn">+</a></h1>
+        
+        <ul id="notes">
+
+
+        </ul>
+        <div class="new-note-window">
+            <h1 class= "notes-header">New Note<i class="fas fa-xs fa-times" type = "submit"></i><i class="fas fa-xs fa-check"></i></h1>
+            <form>
+               
+                <input required  id="txtTitle" type="text" placeholder="Title">
+                <input required id="txtDescription" type="textarea" placeholder="Description">
+                
+                </form>
+        </div>
+
+        <div class="open-note-window">
+            <h1 class = "notes-header"><i class = "fas fa-arrow-left"></i>Note</h1>
+            <h2 id = "note-name">hello</h2>
+            <p id = "area"></p>
+        </div>
+
+        <div class="fillout"><p id = "fill-text">Please fill out all the fields!</p></div>
+        <div class="bottom-box-container">
+            <div class="bottom-box">
+                <a href="#" id = "openBtn">Open</a>
+                <a href="#" id = "deleteBtn">Delete</a>
+            </div>
+
+        </div>
+       
+       
+        <div class="choice-box">
+            <div class="yes-or-no">
+                <h2>Are you sure?</h2>
+                <a href="#" class="yes-button">YES</a>
+                <a href="#" class="no-button">NO</a>
+            </div>
+        </div>
+        
+        <div id="overlay"></div>
+        
+        
+    </div>
+    
+    <script type="text/javascript" src = "main.js"></script>
+</body>
+</html>
